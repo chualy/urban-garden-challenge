@@ -52,7 +52,6 @@
         padding: 50px;
         margin: 200px;
         color: whitesmoke;
-
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
       }
 
@@ -64,9 +63,15 @@
       h2 {
         font-size: 1.8rem;
         max-width: 80%;
+        background-color: rgba(77, 105, 44, 0.1);
+        border-radius: 10px;
       }
       h3 {
         color: gray;
+      }
+
+      ul {
+        list-style: none;
       }
 
       .quote {
@@ -82,7 +87,7 @@
         background-color: #96633f;
         color: white;
         margin: 0 auto;
-        padding: 100px;
+        padding: 20px 150px;
       }
 
       .text-trees,
@@ -90,7 +95,19 @@
         text-align: center;
         background-color: antiquewhite;
         margin: 0 auto;
-        padding: 100px;
+        padding: 50px 200px;
+      }
+
+      .park-activity {
+        padding: 20px 50px;
+      }
+
+      footer {
+        font-size: 0.8rem;
+        text-align: center;
+        color: white;
+        background-color: #4d692c;
+        padding: 10px;
       }
     </style>
   </head>
@@ -100,13 +117,13 @@
         <h1>From Garden City to City in Nature</h1>
       </div>
       <div class="intro row">
-        <div class="col-5 quote">
+        <div class="col-5 quote p-5">
           “I have always believed that a blighted urban landscape, a concrete
           jungle destroys the human spirit. We need the greenery of nature to
           lift our spirits.” <br />
           – Mr Lee Kuan Yew, 1995
         </div>
-        <div class="col-7">
+        <div class="col-7 p-5">
           <p>
             SIngapore is a small tropical city-state with little land space.
             Despite the geographical limitations, there are many pockets of
@@ -154,13 +171,47 @@
         <h2>Spend time with loved ones in a green oasis near home</h2>
       </div>
       <div class="text-parks">
-        <p>
-          Parks and gardens are a stone’s throw away from residential and work
-          places. They allow for community gathering and recreation.
-        </p>
-        <p>activities</p>
+        <div class="row">
+          <div class="col">
+            Parks and gardens are a stone’s throw away from residential and work
+            places. Be it for recreation, relaxation or exercise, young and old
+            can spend time outdoors and gather with the community.
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-4">
+            <div class="park-activity">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/083/original/05-park-play.jpg?1715360866"
+                class="img-fluid rounded-circle shadow-sm"
+              />
+              <h4>Play</h4>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="park-activity">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/084/original/06-park-cycle.jpg?1715360874"
+                class="img-fluid rounded-circle shadow-sm"
+              />
+              <h4>Cycle</h4>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="park-activity">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/085/original/07-eastcoast-camp-bbq.PNG?1715360888"
+                class="img-fluid rounded-circle shadow-sm"
+              />
+              <h4>Gather</h4>
+            </div>
+          </div>
+        </div>
       </div>
-      <footer>Coded by Yen for SheCodes Challenge.</footer>
+      <footer>
+        May 2024. Coded by Yen for SheCodes Challenge with the theme of Urban
+        Garden.
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
