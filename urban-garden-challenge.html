@@ -179,6 +179,8 @@
       .link-trees:hover {
         color: #4d692c;
         text-decoration: underline;
+        transform: scale(1.5);
+        font-size: larger;
       }
 
       .section-text {
@@ -287,6 +289,7 @@
                       href="https://www.nparks.gov.sg/treessg/learn/know-our-trees"
                       class="link-trees"
                       target="_blank"
+                      id="link-commontrees"
                       ><img
                         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
                       />Learn to recognise some trees</a
@@ -297,6 +300,7 @@
                       href="https://www.nparks.gov.sg/gardens-parks-and-nature/heritage-roads"
                       class="link-trees"
                       target="_blank"
+                      id="link-heritageroads"
                       ><img
                         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
                       />See some scenic-tree-lined roads</a
@@ -307,6 +311,7 @@
                       href="https://www.nparks.gov.sg/gardens-parks-and-nature/heritage-trees"
                       class="link-trees"
                       target="_blank"
+                      id="link-heritagetrees"
                       ><img
                         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
                       />Be awed by matured trees</a
@@ -501,5 +506,36 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const linkCommonTrees = document.querySelector("#link-commontrees");
+      linkCommonTrees.addEventListener("mouseenter", () => {
+        linkCommonTrees.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Common Trees in Singapore";
+      });
+      linkCommonTrees.addEventListener("mouseout", () => {
+        linkCommonTrees.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Learn to recognise some trees";
+      });
+
+      const linkHeritageRoads = document.querySelector("#link-heritageroads");
+      linkHeritageRoads.addEventListener("mouseenter", () => {
+        linkHeritageRoads.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Heritage Roads";
+      });
+      linkHeritageRoads.addEventListener("mouseout", () => {
+        linkHeritageRoads.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>See some scenic-tree-lined roads";
+      });
+
+      const linkHeritageTrees = document.querySelector("#link-heritagetrees");
+      linkHeritageTrees.addEventListener("mouseenter", () => {
+        linkHeritageTrees.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Heritage Trees";
+      });
+      linkHeritageTrees.addEventListener("mouseout", () => {
+        linkHeritageTrees.innerHTML =
+          "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Be awed by matured trees";
+      });
+    </script>
   </body>
 </html>
