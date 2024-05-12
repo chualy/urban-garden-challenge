@@ -34,9 +34,7 @@
       }
 
       .banner,
-      .img-trees,
-      .img-parks,
-      .img-gardens {
+      .images {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -61,6 +59,25 @@
         background-image: URL("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/086/original/08-jurong-therapeutic-garden.jpeg?1715360907");
       }
 
+      .img-reserves {
+        background-image: URL("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/089/original/11-macritchie-boardwalk.jpg?1715360982");
+      }
+
+      .img-heritage {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/095/original/17-botanic-gardens.jpg?1715361052");
+      }
+
+      .img-icon {
+        background-image: URL("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/098/original/20-gardens-by-the-bay-lake.jpg?1715361093");
+      }
+
+      .img-verticalgreen {
+        background-image: URL("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/101/original/23-parkroyalpickering3.PNG?1715361140");
+      }
+
+      .img-indoorplants {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/104/original/26-indoorplants.PNG?1715361189");
+      }
       .images {
         position: relative;
         opacity: 0.8;
@@ -114,7 +131,12 @@
 
       .text-trees,
       .text-parks,
-      .text-gardens {
+      .text-gardens,
+      .text-reserves,
+      .text-heritage,
+      .text-icon,
+      .text-verticalgreen,
+      .text-indoorplants {
         text-align: center;
         background-color: antiquewhite;
         margin: 0 auto;
@@ -179,121 +201,198 @@
           <p>Let us now explore the green spaces in this city!</p>
         </div>
       </div>
-      <div class="img-trees images">
-        <h2>Enjoy the scenery and greenery on your journey</h2>
-      </div>
-      <div class="text-trees row">
-        <div class="col">
-          <p>
-            Tree planting was one of the earliest greening efforts in the city’s
-            transformation. Today, trees such as Rain Tree and Angsana and
-            flowering shrubs are common sights along the roads and in the
-            neighbourhoods in this urban city.
-          </p>
-          <h3>Benefits of Trees</h3>
-          <ul>
-            <li>Provide shade and reduce ambient temperature</li>
-            <li>Improve water and air quality</li>
-            <li>Retain rainwater</li>
-            <li>Calming</li>
-            <li>Easy on the eyes</li>
-          </ul>
+      <div class="section-trees">
+        <div class="img-trees images">
+          <h2>Enjoy the scenery and greenery on your journey</h2>
         </div>
-        <div class="col">
-          <p>Do you want to</p>
-          <ul>
-            <li>Learn to recognise some trees</li>
-            <li>See some scenic-tree-lined roads</li>
-            <li>Be awed by matured trees</li>
-          </ul>
-        </div>
-      </div>
-      <div class="img-parks images">
-        <h2>Spend time with loved ones in a green oasis near home</h2>
-      </div>
-      <div class="text-parks">
-        <div class="row">
+        <div class="text-trees row">
           <div class="col">
-            Parks and gardens are a stone’s throw away from residential and work
-            places. Be it for recreation, relaxation or exercise, young and old
-            can spend time outdoors and gather with the community.
+            <p>
+              Tree planting was one of the earliest greening efforts in the
+              city’s transformation. Today, trees such as Rain Tree and Angsana
+              and flowering shrubs are common sights along the roads and in the
+              neighbourhoods in this urban city.
+            </p>
+            <h3>Benefits of Trees</h3>
+            <ul>
+              <li>Provide shade and reduce ambient temperature</li>
+              <li>Improve water and air quality</li>
+              <li>Retain rainwater</li>
+              <li>Calming</li>
+              <li>Easy on the eyes</li>
+            </ul>
+          </div>
+          <div class="col">
+            <p>Do you want to</p>
+            <ul>
+              <li>Learn to recognise some trees</li>
+              <li>See some scenic-tree-lined roads</li>
+              <li>Be awed by matured trees</li>
+            </ul>
           </div>
         </div>
-        <div class="row my-3">
-          <div class="col-4">
-            <div class="park-activity">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/083/original/05-park-play.jpg?1715360866"
-                class="img-fluid rounded-circle shadow-sm"
-              />
-              <h4>Play</h4>
+      </div>
+      <div class="section-parks">
+        <div class="img-parks images">
+          <h2>Spend time with loved ones in a green oasis near home</h2>
+        </div>
+        <div class="text-parks">
+          <div class="row">
+            <div class="col">
+              Parks and gardens are a stone’s throw away from residential and
+              work places. Be it for recreation, relaxation or exercise, young
+              and old can spend time outdoors and gather with the community.
             </div>
           </div>
-          <div class="col-4">
-            <div class="park-activity">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/084/original/06-park-cycle.jpg?1715360874"
-                class="img-fluid rounded-circle shadow-sm"
-              />
-              <h4>Cycle</h4>
+          <div class="row my-3">
+            <div class="col-4">
+              <div class="park-activity">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/083/original/05-park-play.jpg?1715360866"
+                  class="img-fluid rounded-circle shadow-sm"
+                />
+                <h4>Play</h4>
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="park-activity">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/085/original/07-eastcoast-camp-bbq.PNG?1715360888"
-                class="img-fluid rounded-circle shadow-sm"
-              />
-              <h4>Gather</h4>
+            <div class="col-4">
+              <div class="park-activity">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/084/original/06-park-cycle.jpg?1715360874"
+                  class="img-fluid rounded-circle shadow-sm"
+                />
+                <h4>Cycle</h4>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="park-activity">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/085/original/07-eastcoast-camp-bbq.PNG?1715360888"
+                  class="img-fluid rounded-circle shadow-sm"
+                />
+                <h4>Gather</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="img-gardens images">
-        <h2>Cultivate a therapeutic hobby. Heal in nature</h2>
+      <div class="section-gardens">
+        <div class="img-gardens images">
+          <h2>Cultivate a therapeutic hobby. Heal in nature</h2>
+        </div>
+        <div class="text-gardens d-flex">
+          <div class="row p-5">
+            <div class="col-6">
+              <div class="card text-center p-5 h-100">
+                <h4>Community Garden</h4>
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/087/original/09-holland-community-gardens.jpg?1715360933"
+                  class="img-fluid p-4"
+                />
+                <p>
+                  These communal spaces allow like-minded gardeners to volunteer
+                  their time in manning shared gardens that may grow edible
+                  greens, fruits and herbs, ornamental or exotic plants.
+                </p>
+                <a
+                  href="https://gardeningsg.nparks.gov.sg/get-involved/community-gardens/"
+                  target="_blank"
+                  class="link-gardens d-block justify-content-center"
+                  >Learn More
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card text-center p-5 h-100">
+                <h4>Healing Garden</h4>
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/088/original/10-hortpark-therapeutic_garden.jpg?1715360963"
+                  class="img-fluid p-4"
+                />
+                <p>
+                  Scientifically and carefully designed therapeutic gardens can
+                  boost our moods and engage our senses, improving our mental
+                  and emotional wellbeing.
+                </p>
+                <a
+                  href="https://beta.nparks.gov.sg/visit/activities/therapeutic-gardens-therapeutic-horticulture-programmes/therapeutic-gardens-parks"
+                  target="_blank"
+                  class="link-gardens"
+                  >Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text-gardens d-flex">
-        <div class="row p-5">
-          <div class="col-6">
-            <div class="card text-center p-5 h-100">
-              <h4>Community Garden</h4>
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/087/original/09-holland-community-gardens.jpg?1715360933"
-                class="img-fluid p-4"
-              />
-              <p>
-                These communal spaces allow like-minded gardeners to volunteer
-                their time in manning shared gardens that may grow edible
-                greens, fruits and herbs, ornamental or exotic plants.
-              </p>
-              <a
-                href="https://gardeningsg.nparks.gov.sg/get-involved/community-gardens/"
-                target="_blank"
-                class="link-gardens d-block justify-content-center"
-                >Learn More
-              </a>
+      <div class="section-reserves">
+        <div class="img-reserves images">
+          <h2>Get close to nature and appreciate her beauty</h2>
+        </div>
+        <div class="text-reserves">
+          <p>
+            No matter how urbanised Singapore may be, preserving nature reserves
+            is critical to safeguard the ecosystem and biodiversity on this
+            small island. These are the remaining homes to the beautiful plants
+            and creatures here.
+          </p>
+          <p>Carousel of biodiversity</p>
+        </div>
+      </div>
+      <div class="heritage">
+        <div class="img-heritage images">
+          <h2>Relive history and heritage</h2>
+        </div>
+        <div class="text-heritage">
+          <div class="row">
+            <div class="col">Singapore Botanic Gardens</div>
+            <div class="col">
+              Roaming around some of the parks rich in heritage is like taking
+              history lessons outdoors. Some of these parks had witnessed key
+              moments in the nation’s history.
             </div>
+            <div class="col">Fort Canning Park</div>
           </div>
-          <div class="col-6">
-            <div class="card text-center p-5 h-100">
-              <h4>Healing Garden</h4>
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/088/original/10-hortpark-therapeutic_garden.jpg?1715360963"
-                class="img-fluid p-4"
-              />
-              <p>
-                Scientifically and carefully designed therapeutic gardens can
-                boost our moods and engage our senses, improving our mental and
-                emotional wellbeing.
-              </p>
-              <a
-                href="https://beta.nparks.gov.sg/visit/activities/therapeutic-gardens-therapeutic-horticulture-programmes/therapeutic-gardens-parks"
-                target="_blank"
-                class="link-gardens"
-                >Learn More
-              </a>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="section-icon">
+        <div class="img-icon images">
+          <h2>For the world to see</h2>
+        </div>
+        <div class="text-icon">
+          <p>
+            Green spaces can be the backdrop for the world to know about
+            SIngapore. Gardens by the Bay has been featured extensively in
+            promoting tourism, and also in the music videos of popular artistes
+            such as Billie Ellish.
+          </p>
+        </div>
+      </div>
+      <div class="section-verticalgreen">
+        <div class="img-verticalgreen images">
+          <h2>Innovate and aim high</h2>
+        </div>
+        <div class="text-verticalgreen">
+          <p>
+            With limited land space, skyrise greenery may well be the answer to
+            integrating greenery into the concrete jungle. Vertical gardens are
+            getting popular and literally green buildings can be spotted here
+            and there.
+          </p>
+        </div>
+      </div>
+      <div class="section-indoorplants">
+        <div class="img-indoorplants images">
+          <h2>Add life to your home</h2>
+        </div>
+        <div class="text-indoorplants">
+          <p>
+            Indoor plants can add colour and life to our enclosed spaces.
+            Watching your plant grow and taking care of it can bring joy and
+            fun.
+          </p>
+          <p>
+            Head down to the nurseries to purchase some popular indoor plants.
+          </p>
         </div>
       </div>
       <footer>
