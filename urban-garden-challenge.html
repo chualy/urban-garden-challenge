@@ -108,27 +108,23 @@
       h2 {
         font-size: 1.8rem;
         max-width: 80%;
+        letter-spacing: 0.2rem;
+
         background-color: rgba(77, 105, 44, 0.1);
         border-radius: 10px;
       }
       h3 {
-        color: gray;
-      }
-
-      ul {
-        list-style: none;
-        display: inline;
-        color: #4d692c;
-        font-weight: 700;
+        color: rgba(0, 0, 0, 0.6);
       }
 
       .quote {
         padding: 20px;
-        color: whitesmoke;
+        color: rgba(245, 245, 245, 0.8);
         font-family: "Charm", cursive;
         font-size: 1.8rem;
         text-align: right;
         letter-spacing: 2px;
+        text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.8);
       }
 
       .intro {
@@ -138,7 +134,21 @@
         margin: 0 auto;
         padding: 20px 100px;
       }
+      ul {
+        list-style: none;
+        display: inline;
+        color: #4d692c;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
 
+      li {
+        margin: 15px;
+      }
+      .tree-benefit:hover {
+        transform: scale(1.1);
+        color: #68963f;
+      }
       .text-trees,
       .text-parks,
       .text-gardens,
@@ -151,6 +161,24 @@
         background-color: antiquewhite;
         margin: 0 auto;
         padding: 50px 200px;
+      }
+
+      .img-lonetree {
+        max-width: 200px;
+      }
+
+      .link-trees img {
+        max-width: 40px;
+      }
+
+      .link-trees {
+        color: #68963f;
+        text-decoration: none;
+      }
+
+      .link-trees:hover {
+        color: #4d692c;
+        text-decoration: underline;
       }
 
       .section-text {
@@ -235,22 +263,55 @@
                 common sights along the roads and in the neighbourhoods in this
                 urban city.
               </p>
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/196/original/lone-tree.png?1715518573"
+                class="img-lonetree"
+              />
             </div>
             <div class="col">
               <ul>
-                <li>Provide shade and reduce ambient temperature</li>
-                <li>Improve water and air quality</li>
-                <li>Retain rainwater</li>
-                <li>Calming</li>
-                <li>Easy on the eyes</li>
+                <li class="tree-benefit">
+                  Provide shade and reduce ambient temperature
+                </li>
+                <li class="tree-benefit">Improve water and air quality</li>
+                <li class="tree-benefit">Retain rainwater</li>
+                <li class="tree-benefit">Calming</li>
+                <li class="tree-benefit">Easy on the eyes</li>
               </ul>
             </div>
             <div class="row">
               <div class="col">
                 <ul>
-                  <li>Learn to recognise some trees</li>
-                  <li>See some scenic-tree-lined roads</li>
-                  <li>Be awed by matured trees</li>
+                  <li>
+                    <a
+                      href="https://www.nparks.gov.sg/treessg/learn/know-our-trees"
+                      class="link-trees"
+                      target="_blank"
+                      ><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
+                      />Learn to recognise some trees</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.nparks.gov.sg/gardens-parks-and-nature/heritage-roads"
+                      class="link-trees"
+                      target="_blank"
+                      ><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
+                      />See some scenic-tree-lined roads</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.nparks.gov.sg/gardens-parks-and-nature/heritage-trees"
+                      class="link-trees"
+                      target="_blank"
+                      ><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405"
+                      />Be awed by matured trees</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -309,7 +370,7 @@
           <div class="row p-5">
             <div class="col-6">
               <div class="card text-center p-5 h-100">
-                <h4>Community Garden</h4>
+                <h3>Community Garden</h3>
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/087/original/09-holland-community-gardens.jpg?1715360933"
                   class="img-fluid p-4"
@@ -329,7 +390,7 @@
             </div>
             <div class="col-6">
               <div class="card text-center p-5 h-100">
-                <h4>Healing Garden</h4>
+                <h3>Healing Garden</h3>
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/088/original/10-hortpark-therapeutic_garden.jpg?1715360963"
                   class="img-fluid p-4"
