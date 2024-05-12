@@ -137,7 +137,7 @@
         background-color: #96633f;
         color: white;
         margin: 0 auto;
-        padding: 20px 100px;
+        padding: 20px 150px;
       }
       ul {
         list-style: none;
@@ -195,7 +195,7 @@
         font-family: "Fraunces", serif;
       }
       .park-activity {
-        padding: 20px 50px;
+        padding: 20px;
       }
 
       .link-gardens {
@@ -230,6 +230,32 @@
         background-color: #68963f;
         padding: 10px;
       }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3.5rem;
+          padding: 10px;
+        }
+        h2 {
+          font-size: 1.5rem;
+          padding: 10px;
+        }
+
+        .intro,
+        .text-trees,
+        .text-parks,
+        .text-gardens,
+        .text-reserves,
+        .text-heritage,
+        .text-icon,
+        .text-verticalgreen,
+        .text-indoorplants {
+          padding: 50px;
+        }
+        .park-activity {
+          padding: 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -238,13 +264,13 @@
         <h1>From Garden City to City in Nature</h1>
       </div>
       <div class="intro row d-flex align-items-center">
-        <div class="col-5 quote p-5">
+        <div class="col-12 col-lg-5 quote p-1 p-lg-5">
           “I have always believed that a blighted urban landscape, a concrete
           jungle destroys the human spirit. We need the greenery of nature to
           lift our spirits.” <br />
           – Mr Lee Kuan Yew, 1995
         </div>
-        <div class="col-7 p-5">
+        <div class="col-12 col-lg-7 p-1 p-lg-5">
           <p>
             Singapore is a small tropical city-state with little land space.
             Despite the geographical limitations, there are many pockets of
@@ -262,7 +288,18 @@
         </div>
         <div class="text-trees">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
+              <ul>
+                <li class="tree-benefit">
+                  Provide shade and reduce ambient temperature
+                </li>
+                <li class="tree-benefit">Improve water and air quality</li>
+                <li class="tree-benefit">Retain rainwater</li>
+                <li class="tree-benefit">Calming</li>
+                <li class="tree-benefit">Easy on the eyes</li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-6">
               <p>
                 <span class="section-text">Tree</span> planting was one of the
                 earliest greening efforts in the city’s transformation. Today,
@@ -275,17 +312,7 @@
                 class="img-lonetree"
               />
             </div>
-            <div class="col">
-              <ul>
-                <li class="tree-benefit">
-                  Provide shade and reduce ambient temperature
-                </li>
-                <li class="tree-benefit">Improve water and air quality</li>
-                <li class="tree-benefit">Retain rainwater</li>
-                <li class="tree-benefit">Calming</li>
-                <li class="tree-benefit">Easy on the eyes</li>
-              </ul>
-            </div>
+
             <div class="row">
               <div class="col">
                 <ul>
@@ -342,7 +369,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="park-activity">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/083/original/05-park-play.jpg?1715360866"
@@ -351,16 +378,16 @@
                 <h4>Play</h4>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="park-activity">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/084/original/06-park-cycle.jpg?1715360874"
                   class="img-fluid rounded-circle shadow-sm"
                 />
-                <h4>Cycle</h4>
+                <h4>Exercise</h4>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="park-activity">
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/085/original/07-eastcoast-camp-bbq.PNG?1715360888"
@@ -376,10 +403,10 @@
         <div class="img-gardens images">
           <h2>Cultivate a therapeutic hobby. Heal in nature</h2>
         </div>
-        <div class="text-gardens d-flex">
-          <div class="row p-5">
-            <div class="col-6">
-              <div class="card text-center p-5 h-100">
+        <div class="text-gardens">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-10 col-lg-5">
+              <div class="card text-center p-3 h-100">
                 <h3>Community Garden</h3>
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/087/original/09-holland-community-gardens.jpg?1715360933"
@@ -393,13 +420,13 @@
                 <a
                   href="https://gardeningsg.nparks.gov.sg/get-involved/community-gardens/"
                   target="_blank"
-                  class="link-gardens d-block justify-content-center"
+                  class="link-gardens"
                   >Learn More
                 </a>
               </div>
             </div>
-            <div class="col-6">
-              <div class="card text-center p-5 h-100">
+            <div class="col-10 col-lg-5">
+              <div class="card text-center p-3 h-100">
                 <h3>Healing Garden</h3>
                 <img
                   src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/088/original/10-hortpark-therapeutic_garden.jpg?1715360963"
@@ -441,15 +468,17 @@
           <h2>Relive history and heritage</h2>
         </div>
         <div class="text-heritage">
-          <div class="row">
-            <div class="col">Singapore Botanic Gardens</div>
-            <div class="col">
+          <div class="row d-flex">
+            <div class="col-10 col-lg-4 order-lg-2">
               Roaming around some of the parks rich in
               <span class="section-text">heritage</span> is like taking history
               lessons outdoors. Some of these parks had witnessed key moments in
               the nation’s history.
             </div>
-            <div class="col">Fort Canning Park</div>
+            <div class="col-10 col-lg-4 order-lg-1">
+              Singapore Botanic Gardens
+            </div>
+            <div class="col-10 col-lg-4 order-lg-3">Fort Canning Park</div>
           </div>
         </div>
       </div>
