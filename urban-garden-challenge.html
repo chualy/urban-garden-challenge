@@ -223,9 +223,25 @@
         margin: 0 auto;
         object-fit: contain;
       }
+
       .form-end {
         background-color: rgba(250, 235, 215, 0.8);
-        padding: 100px;
+        padding: 50px;
+        border-radius: 10px;
+      }
+
+      .email-input {
+        border-radius: 20px;
+        margin: 5px;
+      }
+      .subscribe-btn {
+        color: white;
+        background-color: #68963f;
+        border-radius: 20px;
+        border-color: #68963f;
+        padding: 5px 10px;
+        margin: 5px;
+        max-width: 150px;
       }
 
       footer {
@@ -618,6 +634,20 @@
       <div class="img-end">
         <div class="form-end">
           <p>Join our mailing list for more green-spiration!</p>
+          <form class="d-flex justify-content-center">
+            <input
+              type="text"
+              placeholder="Email address"
+              class="email-input"
+              id="subEmailInput"
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              class="subscribe-btn"
+              id="subscribeBtn"
+            />
+          </form>
         </div>
       </div>
       <footer>
@@ -660,6 +690,15 @@
         linkHeritageTrees.innerHTML =
           "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/200/original/leaf.png?1715519405'/>Be awed by matured trees";
       });
+
+      function subscribe() {
+        event.preventDefault();
+        alert(
+          "Thank you for subscribing! We will send you updates and tips on greening your environment!"
+        );
+      }
+      let subscribeButton = document.querySelector("#subscribeBtn");
+      subscribeButton.addEventListener("click", subscribe);
     </script>
   </body>
 </html>
