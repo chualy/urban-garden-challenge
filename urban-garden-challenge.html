@@ -118,7 +118,9 @@
         background-color: rgba(77, 105, 44, 0.1);
         border-radius: 10px;
       }
-      h3 {
+
+      h3,
+      .card-title {
         color: rgba(0, 0, 0, 0.6);
       }
 
@@ -213,8 +215,7 @@
         transform: scale(1.1);
         transition: 200ms linear;
       }
-
-      .link-gardens {
+      .btn-links {
         color: white;
         background-color: #68963f;
         text-decoration: none;
@@ -227,7 +228,7 @@
         text-align: center;
       }
 
-      .link-gardens:hover {
+      .btn-links:hover {
         color: white;
         background-color: #4d692c;
         border: #4d692c solid 2px;
@@ -487,7 +488,7 @@
                 <a
                   href="https://gardeningsg.nparks.gov.sg/get-involved/community-gardens/"
                   target="_blank"
-                  class="link-gardens"
+                  class="btn-links"
                   >Learn More
                 </a>
               </div>
@@ -507,7 +508,7 @@
                 <a
                   href="https://beta.nparks.gov.sg/visit/activities/therapeutic-gardens-therapeutic-horticulture-programmes/therapeutic-gardens-parks"
                   target="_blank"
-                  class="link-gardens"
+                  class="btn-links"
                   >Learn More
                 </a>
               </div>
@@ -650,17 +651,61 @@
           <h2>Relive history and heritage</h2>
         </div>
         <div class="text-heritage">
-          <div class="row d-flex">
-            <div class="col-10 col-lg-4 order-lg-2">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-10 col-lg-2 order-lg-2">
               Roaming around some of the parks rich in
               <span class="section-text">heritage</span> is like taking history
               lessons outdoors. Some of these parks had witnessed key moments in
               the nation’s history.
             </div>
-            <div class="col-10 col-lg-4 order-lg-1">
-              Singapore Botanic Gardens
+            <div class="col-10 col-lg-5 order-lg-1">
+              <div class="card">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/096/original/18-botanic-gardens-tembusu.jpeg?1715361068."
+                  class="card-img-top"
+                  alt="Singapore Botanic Gardens"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Singapore Botanic Gardens</h3>
+                  <p class="card-text">
+                    Inscribed as a UNESCO World Heritage Site since 2015, it was
+                    first established as a botanical institute shaped by
+                    Kew-trained botanists.<br />
+                  </p>
+                  <a
+                    href="https://www.nparks.gov.sg/sbg"
+                    target="_blank"
+                    class="btn-links"
+                    >Learn More
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="col-10 col-lg-4 order-lg-3">Fort Canning Park</div>
+            <div class="col-10 col-lg-5 order-lg-3">
+              <div class="card">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/097/original/19-fort-canning-park-fort-gate.jpg?1715361080"
+                  class="card-img-top"
+                  alt="Fort Canning Park"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Fort Canning Park</h3>
+                  <p class="card-text">
+                    It was once the palace home to Malay kings who ruled during
+                    the 14th century and then the British military base. It was
+                    also the venue where Singapore was surrendered by the
+                    British to the Japanese in 1942.
+                    <br />
+                  </p>
+                  <a
+                    href="https://www.visitsingapore.com/see-do-singapore/nature-wildlife/parks-gardens/fort-canning-park/"
+                    target="_blank"
+                    class="btn-links"
+                    >Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
