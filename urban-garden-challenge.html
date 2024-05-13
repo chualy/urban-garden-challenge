@@ -134,6 +134,7 @@
 
       .intro {
         font-size: 1.3rem;
+        letter-spacing: 2px;
         background-color: #96633f;
         color: white;
         margin: 0 auto;
@@ -165,7 +166,7 @@
         text-align: center;
         background-color: antiquewhite;
         margin: 0 auto;
-        padding: 50px 200px;
+        padding: 50px 150px;
       }
 
       .img-lonetree {
@@ -196,6 +197,16 @@
       }
       .park-activity {
         padding: 20px;
+      }
+
+      .park-activity:hover {
+        transform: scale(1.1);
+        transition: 200ms linear;
+      }
+
+      .parks-map iframe {
+        width: 640px;
+        height: 480px;
       }
 
       .link-gardens {
@@ -284,6 +295,10 @@
         }
         .park-activity {
           padding: 20px;
+        }
+
+        .parks-map iframe {
+          max-width: 100%;
         }
       }
     </style>
@@ -424,6 +439,21 @@
                   class="img-fluid rounded-circle shadow-sm"
                 />
                 <h4>Gather</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                Check out all the parks on the map courtesy of
+                <a href="https://www.littledayout.com/parks-in-singapore/"
+                  >littledayout.com</a
+                >.
+              </p>
+              <div class="parks-map">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1YRjlaCZe1YQtuYZpQbYKrseq_w9acwkg&ehbc=2E312F"
+                ></iframe>
               </div>
             </div>
           </div>
