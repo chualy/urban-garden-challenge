@@ -158,14 +158,7 @@
         color: #68963f;
       }
 
-      .text-trees,
-      .text-parks,
-      .text-gardens,
-      .text-reserves,
-      .text-heritage,
-      .text-icon,
-      .text-verticalgreen,
-      .text-indoorplants {
+      .section-text {
         text-align: center;
         background-color: antiquewhite;
         margin: 0 auto;
@@ -193,7 +186,7 @@
         font-size: larger;
       }
 
-      .section-text {
+      .section-title {
         color: #4d692c;
         font-size: 2rem;
         font-weight: 700;
@@ -207,13 +200,22 @@
         transform: scale(1.1);
         transition: 200ms linear;
       }
+      .link-map {
+        color: #68963f;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
+      .link-map:hover {
+        color: #4d692c;
+        text-decoration: underline;
+      }
       .parks-map iframe {
         width: 640px;
         height: 480px;
       }
 
-      .text-gardens img:hover {
+      .section-text img:hover {
         transform: scale(1.1);
         transition: 200ms linear;
       }
@@ -351,14 +353,7 @@
         }
 
         .intro,
-        .text-trees,
-        .text-parks,
-        .text-gardens,
-        .text-reserves,
-        .text-heritage,
-        .text-icon,
-        .text-verticalgreen,
-        .text-indoorplants {
+        .section-text {
           padding: 50px;
         }
         .park-activity {
@@ -399,7 +394,7 @@
         <div class="img-trees images">
           <h2>Enjoy the scenery and greenery on your journey</h2>
         </div>
-        <div class="text-trees">
+        <div class="section-text">
           <div class="row">
             <div class="col-12 col-lg-6">
               <ul>
@@ -414,7 +409,7 @@
             </div>
             <div class="col-12 col-lg-6">
               <p>
-                <span class="section-text">Tree</span> planting was one of the
+                <span class="section-title">Tree</span> planting was one of the
                 earliest greening efforts in the city’s transformation. Today,
                 trees such as Rain Tree and Angsana and flowering shrubs are
                 common sights along the roads and in the neighbourhoods in this
@@ -472,10 +467,10 @@
         <div class="img-parks images">
           <h2>Spend time with loved ones in a green oasis near home</h2>
         </div>
-        <div class="text-parks">
+        <div class="section-text">
           <div class="row">
             <div class="col">
-              <span class="section-text">Parks and gardens</span> are a stone’s
+              <span class="section-title">Parks and gardens</span> are a stone’s
               throw away from residential and work places. Be it for recreation,
               relaxation or exercise, young and old can spend time outdoors and
               gather with the community.
@@ -514,7 +509,10 @@
             <div class="col">
               <p>
                 Check out all the parks on the map courtesy of
-                <a href="https://www.littledayout.com/parks-in-singapore/"
+                <a
+                  href="https://www.littledayout.com/parks-in-singapore/"
+                  target="_blank"
+                  class="link-map"
                   >littledayout.com</a
                 >.
               </p>
@@ -531,7 +529,7 @@
         <div class="img-gardens images">
           <h2>Cultivate a therapeutic hobby. Heal in nature</h2>
         </div>
-        <div class="text-gardens">
+        <div class="section-text">
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-10 col-lg-5">
               <div class="card text-center p-3 h-100">
@@ -582,10 +580,10 @@
         <div class="img-reserves images">
           <h2>Get close to nature and appreciate her beauty</h2>
         </div>
-        <div class="text-reserves">
+        <div class="section-text">
           <p>
             No matter how urbanised Singapore may be, preserving
-            <span class="section-text">nature reserves</span>
+            <span class="section-title">nature reserves</span>
             is critical to safeguard the ecosystem and biodiversity on this
             small island. These are the remaining homes to the beautiful plants
             and creatures here.
@@ -712,11 +710,11 @@
         <div class="img-heritage images">
           <h2>Relive history and heritage</h2>
         </div>
-        <div class="text-heritage">
+        <div class="section-text">
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-10 col-lg-2 order-lg-2">
               Roaming around some of the parks rich in
-              <span class="section-text">heritage</span> is like taking history
+              <span class="section-title">heritage</span> is like taking history
               lessons outdoors. Some of these parks had witnessed key moments in
               the nation’s history.
             </div>
@@ -775,12 +773,12 @@
         <div class="img-icon images">
           <h2>For the world to see</h2>
         </div>
-        <div class="text-icon">
+        <div class="section-text">
           <div class="row">
             <div class="col">
               <p>
                 Green spaces can also be
-                <span class="section-text"> icons </span>and the backdrop for
+                <span class="section-title"> icons </span>and the backdrop for
                 the world to know about SIngapore.
               </p>
             </div>
@@ -834,12 +832,12 @@
         <div class="img-verticalgreen images">
           <h2>Innovate and aim high</h2>
         </div>
-        <div class="text-verticalgreen">
+        <div class="section-text">
           <div class="row">
             <div class="col">
               <p>
                 With limited land space,
-                <span class="section-text"> skyrise greenery</span> may well be
+                <span class="section-title"> skyrise greenery</span> may well be
                 the answer to integrating greenery into the concrete jungle.
                 Vertical gardens are getting popular and literally green
                 buildings can be spotted here and there.
@@ -876,10 +874,10 @@
         <div class="img-indoorplants images">
           <h2>Add life to your home</h2>
         </div>
-        <div class="text-indoorplants">
+        <div class="section-text">
           <div class="row">
             <p>
-              <span class="section-text"> Indoor plants</span> can add colour
+              <span class="section-title"> Indoor plants</span> can add colour
               and life to our enclosed spaces. Watching your plant grow and
               taking care of it can bring joy and fun.
             </p>
