@@ -157,6 +157,7 @@
         transform: scale(1.1);
         color: #68963f;
       }
+
       .text-trees,
       .text-parks,
       .text-gardens,
@@ -187,7 +188,8 @@
       .link-trees:hover {
         color: #4d692c;
         text-decoration: underline;
-        transform: scale(1.5);
+        transform: scale(1.3);
+        transition: 250ms linear;
         font-size: larger;
       }
 
@@ -250,6 +252,26 @@
         text-decoration: underline;
       }
 
+      .link-icon {
+        color: #963f7c;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+
+      .link-icon:hover {
+        color: #4d692c;
+        font-weight: 800;
+        text-decoration: underline;
+        transition: 200ms linear;
+      }
+
+      .imggallery-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
       .form-end {
         background-color: rgba(250, 235, 215, 0.8);
         padding: 50px;
@@ -714,13 +736,58 @@
           <h2>For the world to see</h2>
         </div>
         <div class="text-icon">
-          <p>
-            Green spaces can also be
-            <span class="section-text"> icons </span>and the backdrop for the
-            world to know about SIngapore. Gardens by the Bay has been featured
-            extensively in promoting tourism, and also in the music videos of
-            popular artistes such as Billie Ellish.
-          </p>
+          <div class="row">
+            <div class="col">
+              <p>
+                Green spaces can also be
+                <span class="section-text"> icons </span>and the backdrop for
+                the world to know about SIngapore.
+              </p>
+            </div>
+          </div>
+          <div class="row imggallery-icon my-2">
+            <div class="col-6 col-lg-3 p-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/299/original/gardens-cloudforest.jpg?1715615851"
+              />
+            </div>
+
+            <div class="col-6 col-lg-3 p-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/300/original/gardens-flower-dome-02.jpg?1715616127"
+              />
+            </div>
+            <div class="col-6 col-lg-3 p-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/302/original/gardens-bayeast.jpg?1715616173"
+              />
+            </div>
+            <div class="col-6 col-lg-3 p-1">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/126/301/original/gardens-supertree.jpg?1715616140"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                <a
+                  href="https://www.gardensbythebay.com.sg/"
+                  target="_blank"
+                  class="link-icon"
+                  >Gardens by the Bay</a
+                >
+                has been featured extensively in promoting tourism, and also in
+                the music videos of popular artistes such as
+                <a
+                  href="https://youtu.be/UQphbBmXI-E?si=W_3M309hNu6v1YVk"
+                  target="_blank"
+                  class="link-icon"
+                  >Billie Ellish</a
+                >.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section-verticalgreen">
